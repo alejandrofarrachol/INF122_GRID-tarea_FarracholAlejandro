@@ -28,6 +28,9 @@
   background-color: darkgoldenrod;
   grid-column-start: header;
   grid-column-end: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /*grid-column: header;
   grid-row: 1/3;*/
 }
@@ -35,11 +38,17 @@
 {
   background-color: bisque;
   grid-column: side1a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .conteiner .side1b
 {
   background-color: bisque;
   grid-column: side1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .conteiner .contenido1
 {
@@ -47,6 +56,9 @@
   grid-column: contenido1a;
   grid-row-start: contenido1a;
   grid-row-end: contenido1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 .conteiner .contenido2
@@ -71,9 +83,24 @@
   grid-column: side2a;
   grid-row-start: side2a;
   grid-row-end: side2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .conteiner .footer
 {
   background-color: silver;
   grid-column: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media sreen and (max-width:768px)
+{
+ .conteiner{
+    grid-template-areas: "header header header header header"
+                         "side1a contenido1a contenido2a contenido3a side2a"
+                         "side1b contenido1b contenido2b contenido3b side2b"
+                         "footer footer footer footer footer";
+ }
 }
